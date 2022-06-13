@@ -2,13 +2,14 @@ name: Migration to Time-Tracker-V2 Pipeline
 on:
   push:
     branches: [ "master" ]
+    workflow_dispatch:
 jobs:
   build-and-check:
     name: Deploy setup
     runs-on: ubuntu-latest
     steps:
-      -name: Checkout to master
       - uses: actions/checkout@master
+
       - name: Setup the environment
         run: echo Setting the environment!
       - name: Run all test
