@@ -12,13 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Init mypy
         run: echo Hello, world!
+
       - name: Run script to create database
         run: echo Running script o create data base!
+
       - name: Run test
         run: echo Running test!
+
       - name: Run test connection
         run: echo Running test connection!
+        
       - name: Finish
         run: echo Finish!
