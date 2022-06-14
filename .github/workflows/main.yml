@@ -23,7 +23,7 @@ jobs:
 
       #Test Alembic script
       - name: Run test
-        run: echo Running test (script to create database)
+        run: echo Running test script to create database
       
       #Execute DB destroy script
       - name: Run script to destroy database
