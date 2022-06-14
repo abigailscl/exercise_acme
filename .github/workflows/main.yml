@@ -12,18 +12,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
+      
       - name: Init mypy
+        #Here put Alempic  init .
         run: echo Hello, world!
 
-      - name: Run script to create database
-        run: echo Running script o create data base!
+      #Static code analyzer
+      - name: Pylint
+        run: echo Running Pylint 
 
+      #Test Alembic script
       - name: Run test
-        run: echo Running test!
-        
+        run: echo Running test (script to create database)
+      
+      #Execute DB destroy script
+      - name: Run script to destroy database
+        run: echo Running script to destroy data base
+
+      #Execute DB create script
+      - name: Run script to creat database
+        run: echo Running script ti create data base
+      
+      #Run test connecion (Map Data Script)
       - name: Run test connection
-        run: echo Running test connection!
+        run: echo Running test connection
+      
+      #Execute Map Data Script
+      - name: Run Map Data script from CosmosDB to PostGreSQL
+        run: echo Moving the data from CosmosDB to PostGreSQL
         
+      #Execute Toggle script
       - name: Finish
         run: echo Finish!
