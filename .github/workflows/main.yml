@@ -41,6 +41,6 @@ jobs:
       - name: Run Map Data script from CosmosDB to PostGreSQL
         run: echo Moving the data from CosmosDB to PostGreSQL
         
-      #Execute Toggle script
+      #Finish
       - name: Finish
         run: echo Finish!
