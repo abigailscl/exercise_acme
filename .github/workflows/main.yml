@@ -1,4 +1,4 @@
-name: Migration to Time-Tracker-V2 Pipeline
+name: Migration to Time-Tracker-V2 Pipeline in a branch
 on:
   push:
     branches: [ "main" ]
